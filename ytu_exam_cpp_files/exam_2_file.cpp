@@ -11,7 +11,6 @@ int main(int argc, char const *argv[])
     int i=0;
 
     std::cout << "Plase input name" << '\n';
-    // std::cin >> ;
     gets(name);
 
     do{ 
@@ -27,13 +26,9 @@ int main(int argc, char const *argv[])
     }while (name[i]!='\0');
     
     i=0;
-  
     std::cout << "Plase input surname" << '\n';
     gets(surname);
 
-    
-   
-      
     do{
         
         if(!((surname[i]>='A')&&(surname[i]<='z'))){
