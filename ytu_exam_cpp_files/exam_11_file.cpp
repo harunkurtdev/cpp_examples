@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 
     std::cout << '\n';
 
-   std::cout <<"You input values characters "<< str_numbers[(int)(input_value/honderds)] << "\t"<< str_numbers[((input_value%honderds)/tens)] << "\t"<< str_numbers[(((input_value%honderds)%tens)/ones)] ;
+    std::cout <<"You input values characters "<< str_numbers[(int)(input_value/honderds)] << "\t"<< str_numbers[((input_value%honderds)/tens)] << "\t"<< str_numbers[(((input_value%honderds)%tens)/ones)] ;
 
     return 0;
 }
