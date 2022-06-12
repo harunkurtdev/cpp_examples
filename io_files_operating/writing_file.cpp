@@ -1,7 +1,8 @@
 /**
+ * 
  * @file reading_writing_file.cpp
  * @author your name (you@domain.com)
- * @brief 
+ * @brief write to file
  * @version 0.1
  * @date 2022-06-12
  * 
@@ -34,8 +35,10 @@ int main(int argc, char const *argv[])
         /* code */
     }
 
+    //  << işlemi ile yazılmasını sağlanmaktadır.... tam tersi ile okuma işlemi yapılabilinebilir...
     //doysa üzerine yazmasını sağla
-    out<<"file xx"<<std::endl;
+    out<<"file"<<std::endl;
+    out<<"filexx"<<std::endl;
     //dosyayı kapatma işlemi
     out.close();
     
