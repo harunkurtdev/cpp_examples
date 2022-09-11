@@ -5,13 +5,19 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-#include <string.h> //for memset 
+#include <string> //for memset 
 #include <iostream>
 
 using namespace std;
 
 int main(){
 
+    string a;
+
+    a="hello";
+
+
+    char* val;
 
     int server=0,client=0;
 
@@ -32,10 +38,10 @@ int main(){
 
     client=accept(server,(struct sockaddr*)NULL,NULL);
 
-    read(client,buffer,sizeof(buffer)-1);
+    read(client,(char *)&val,sizeof(val));
 
-    std::cout<<"client says: buffer is come"<<buffer<<endl;
-    memset(buffer,0,sizeof(buffer));
+    std::cout<<"client says: buffer is come "<<(char *)&val<<endl;
+    // memset(a,0,sizeof(a));
 
     close(client);
 
