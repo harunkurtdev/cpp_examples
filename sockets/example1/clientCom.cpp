@@ -26,8 +26,10 @@ int main(){
 
     char buffer[1024]={'h','e','l','l','o'};
 
-    write()
+    write(serverSock,buffer,strlen(buffer));
 
-    write()
+    close(serverSock);
+
+    std::cout<<"Socket closed."<<endl;
    
 }
