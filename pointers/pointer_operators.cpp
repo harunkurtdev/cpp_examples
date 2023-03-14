@@ -9,8 +9,11 @@ int main(int argc, char const *argv[])
      * This example give our value adress and value
      * 
      */
+    
+    template <size_t T> int arr[T];
 
 
+    int *ptr=arr;
     int total;
     int *ptr;
     int val;

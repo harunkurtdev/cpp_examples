@@ -9,7 +9,7 @@ int main() {
 	std::cin >> money>> disc>> fix;
     std::cout << "discount "<< discount(money, disc, fix) << '\n';
     std::cout << "price "<< money << '\n';
-
+	
 	return 0;
 }
 

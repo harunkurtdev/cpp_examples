@@ -14,6 +14,7 @@ public:
 
 void array_class::setVal(int a=0){
     x=a;
+    // return NULL;
 }
 
 int array_class::print(){
@@ -26,6 +27,7 @@ array_class::~array_class()
 
 int main(int argc, char const *argv[])
 {
+    array_class x;
     array_class arr[2];
     //pointerlı array tanımlandı 
     array_class *ptr;
